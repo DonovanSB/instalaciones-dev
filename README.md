@@ -77,6 +77,7 @@ json settings
 sudo apt install git-all
 git config --global user.name "name"
 git config --global user.email "correo@gmail.com"
+git config --global credential.helper store
 ```
 # Node js
 Descargar node de la pagina oficial y descomprimir en una carpeta como:
