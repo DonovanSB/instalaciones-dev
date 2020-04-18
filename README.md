@@ -59,7 +59,7 @@ ext install Dart-Code.flutter
 ext install PKief.material-icon-theme
 ext install quicktype.quicktype
 ext install formulahendry.terminal
-ext install formulahendry.terminal
+ext install fabiospampinato.vscode-monokai-night
 ```
 json settings
 ```
