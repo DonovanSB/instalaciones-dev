@@ -19,6 +19,63 @@ export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/bin"
 ```
 flutter doctor
 ```
+- Snippets
+```
+{
+    // Place your snippets for dart here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "Rectángulo Widget": {
+        "prefix": "rectangulo",
+        "body": [
+            "class Rectangulo extends StatelessWidget {",
+            "    @override",
+            "    Widget build(BuildContext context) {",
+            "    return Container(",
+            "       width: 70,",
+            "       height: 70,",
+            "       decoration: BoxDecoration(",
+            "         color: Colors.blue",
+            "       ),",
+            "     );",
+            "   }",
+            "}",
+        ],
+        "description": "Log output to console"
+    },
+
+    "Flutter Page": {
+        "prefix": "fl-page",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "",
+            "",
+            "class ${1:name}Page extends StatelessWidget {",
+            "",
+            "  @override",
+            "  Widget build(BuildContext context) {",
+            "    return Scaffold(",
+            "      body: Center(",
+            "        child: Text('Hola Mundo'),",
+            "     ),",
+            "   );",
+            "  }",
+            "}",
+        ],
+        "description": "Crea una página de flutter fácilmente"
+    }
+}
+```
 
 ## Android Estudio
 para usuarios de 64 bits
@@ -48,6 +105,10 @@ X-Deepin-Vendor=user-custom
 ```
 Abrir andriod-studio y continuar con la instalacion.
 
+Nota revisar:
+```
+sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin
+```
 ## Visual studio code
 Instalar de la pagina oficial.
 algunas extensiones (ctrl + p):
@@ -74,9 +135,9 @@ json settings
 ```
 # Git
 ```
-sudo apt install git-all
-git config --global user.name "name"
-git config --global user.email "correo@gmail.com"
+sudo apt install git
+git config --global user.name "DonovanSB"
+git config --global user.email "dvnstevenb@gmail.com"
 git config --global credential.helper store
 ```
 # Node js
@@ -90,8 +151,8 @@ export PATH="$PATH:/home/donovan/Documents/development/node-v13.13.0-linux-x64/b
 ```
 Para usar con sudo se deben vincular a /src/local/bin
 ```
-sudo ln -s /home/donovan/Documents/development/node-v13.13.0-linux-x64/bin/node /usr/local/bin/node
-sudo ln -s /home/donovan/Documents/development/node-v13.13.0-linux-x64/bin/npm /usr/local/bin/npm
+sudo ln -s /home/donovan/Documents/development/node/bin/node /usr/local/bin/node
+sudo ln -s /home/donovan/Documents/development/node/bin/npm /usr/local/bin/npm
 ```
 Algunos paquetes
 * Nodemon
@@ -110,4 +171,9 @@ sudo npm install -g @angular/cli
 # IONIC
 ```
 sudo npm install -g @ionic/cli
+```
+
+## HEROKU
+```
+curl https://cli-assets.heroku.com/install.sh | sh
 ```
